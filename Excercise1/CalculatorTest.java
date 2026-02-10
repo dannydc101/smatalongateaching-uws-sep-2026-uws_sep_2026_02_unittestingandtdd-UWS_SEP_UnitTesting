@@ -21,7 +21,6 @@ public class CalculatorTest {
 
     @Test
     public void testDivide() {
-        // We use a delta (0.0001) because doubles can have precision issues
         assertEquals(2.5, calculator.divide(5, 2), 0.0001);
     }
 
@@ -29,4 +28,5 @@ public class CalculatorTest {
     public void testDivideByZero() {
         calculator.divide(5, 0);
     }
+
 }
